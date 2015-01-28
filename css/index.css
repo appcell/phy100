@@ -1,0 +1,573 @@
+/* ==================================== */
+/*           Global Settings            */
+/* ==================================== */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after
+{
+    -webkit-box-sizing: inherit;
+       -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+body
+{
+    position: absolute;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+
+    background: #eee;
+}
+ul
+{
+    display: block;
+
+    list-style-type: none;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+
+
+/* ==================================== */
+/*             Basic Layout             */
+/* ==================================== */
+#header
+{
+    position: absolute;
+    z-index: 999;
+
+    width: 100%;
+    height: 65px;
+}
+#header #navbar
+{
+    position: relative;
+
+    width: 1050px;
+    height: 65px;
+    margin: 0 auto;
+}
+#banner
+{
+    position: absolute;
+    z-index: 0;
+    top: 65px;
+
+    width: 100%;
+    height: 264px;
+}
+#container
+{
+    position: relative;
+    z-index: 1;
+
+    overflow: hidden;
+
+    width: 1050px;
+    min-height: 100%;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: -201px;
+}
+#sidebar
+{
+    float: left;
+
+    width: 340px;
+    height: 100%;
+}
+#content
+{
+    float: left;
+
+    width: 700px;
+    height: 100%;
+    padding-bottom: 40px;
+}
+#sticktobottom
+{
+    position: relative;
+
+    visibility: hidden;
+    clear: both;
+
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+}
+
+/* ==================================== */
+/*            Layout Details            */
+/* ==================================== */
+/* ======= Header ======= */
+
+#header #decor-left
+{
+    position: absolute;
+    top: 200px;
+    left: -107px;
+
+    width: 107px;
+    height: 380px;
+}
+#header #decor-right
+{
+    position: absolute;
+    top: 200px;
+    right: -105px;
+
+    width: 115px;
+    height: 380px;
+}
+
+/* ======= Navbar ======= */
+
+#navbar ul
+{
+    float: right;
+
+    height: 30px;
+}
+#navbar ul li
+{
+    display: inline-block;
+
+    padding: 20px 15px 0 15px;
+}
+
+/* ======= Banner ======= */
+
+#banner-left
+{
+    float: left;
+
+    width: 570px;
+    height: 100%;
+}
+#banner-right
+{
+    float: right;
+
+    width: 570px;
+    height: 100%;
+}
+
+/* ======= Content ======= */
+#content > *
+{
+    position: relative;
+}
+#content > div
+{
+    margin: 10px 20px 30px 20px;
+}
+#content > #content-top
+{
+    width: 100%;
+    height: 30px;
+    margin: 0;
+}
+#content > #content-top + div
+{
+    margin-top: 30px;
+}
+div#footer
+{
+    position: relative;
+
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 180px;
+}
+div#footer p
+{
+    text-align: center;
+}
+#shadow-right
+{
+    float: left;
+
+    width: 10px;
+    height: 50px;
+}
+
+/* ======= Sidebar ======= */
+
+#sidebar-main
+{
+    position: absolute;
+
+    display: block;
+
+    width: 340px;
+    height: 379px;
+}
+#sidebar-nav
+{
+    position: relative;
+
+    width: 268px;
+    height: 58px;
+    margin: 10px auto 60px auto;
+}
+#side-link
+{
+    width: 220px;
+    margin-left: 50px;
+    padding: 3px 0;
+}
+/* ==================================== */
+/*                Styles                */
+/* ==================================== */
+body {
+    background: url('../img/bg.gif');
+}
+/* ======= Header ======= */
+#header
+{
+    background: url('../img/bg.gif');
+}
+
+/* ======= Navbar ======= */
+
+#navbar ul
+{
+    list-style-type: none;
+}
+
+
+/* ======= Banner ======= */
+#banner
+{
+    background: url('../img/banner-bg.jpg');
+}
+#banner #banner-left
+{
+    background: url('../img/banner-bg-left.jpg');
+}
+#banner #banner-right
+{
+    background: url('../img/banner-bg-right.jpg');
+}
+
+/* ======= Main ======= */
+#container
+{
+    background: #fff;
+}
+#content
+{
+    background: #fff;
+}
+#content-top
+{
+    background: url('../img/content-top.png');
+}
+#decor-left
+{
+    background: url('../img/decor-left.png');
+}
+#decor-right
+{
+    background: url('../img/decor-right.png');
+}
+#footer
+{
+    border-top: 1px dashed #ccc;
+}
+#shadow-right
+{
+    background: url('../img/shadow-right.png');
+}
+
+/* ======= Sidebar ======= */
+#sidebar
+{
+    background: url('../img/sidebar-bg.png');
+}
+#sidebar-main
+{
+    background: url('../img/sidebar-main.png');
+}
+
+
+/* ==================================== */
+/*               Modules                */
+/* ==================================== */
+/* ======= Breadcumb ======= */
+
+#breadcumb > ul li
+{
+    display: inline-block;
+}
+#breadcumb > ul > li:before
+{
+    display: inline-block;
+
+    margin-right: 5px;
+
+    content: url('../img/arrow.png');
+}
+#breadcumb > ul > li:first-child:before
+{
+    position: relative;
+    top: 3px;
+
+    display: inline-block;
+
+    content: url('../img/home.gif');
+}
+/* ======= Article ======= */
+#article{}
+#article-title
+{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+#article-title h1
+{
+    font-weight: normal;
+
+    text-align: center;
+}
+#article-title .publish-time
+{
+    display: block;
+
+    text-align: center;
+}
+#article-content {
+    padding: 0 20px;
+}
+
+/* ======= Slider ======= */
+#slider
+{
+    height: 190px;
+    margin: 40px 20px 30px 20px;
+
+    background-color: #666;
+}
+
+/* ======= Category ======= */
+.category
+{
+    margin: 40px 20px 30px 20px;
+}
+.category .category-title
+{
+    width: 663px;
+    height: 32px;
+    padding: 5px 0 4px 50px;
+
+    background: url('../img/category-title.jpg');
+}
+.category .category-more
+{
+    position: absolute;
+    top: 6px;
+    right: 25px;
+
+    width: 36px;
+    height: 17px;
+
+    background: url('../img/more.gif');
+}
+.category .category-more a
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+.category ul
+{
+    margin: 10px 0 10px 20px;
+    padding-left: 15px;
+
+    border-left: 17px solid #eee;
+}
+.category span.publish-time
+{
+    float: right;
+
+    margin-right: 20px;
+}
+/* ======= Page ======= */
+.page {
+    text-align: center;
+}
+.page-prev:before {
+    display: inline-block;
+
+    margin-right: 5px;
+
+    content: url('../img/page-prev.png');
+}
+.page-next {
+    margin-left: 10px;
+}
+
+.page-next:after {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    content: url('../img/page-next.png');
+}
+
+/* ======= Sidebar Nav ======= */
+#sidebar-main ul > li
+{
+    border-bottom: 1px solid;
+    -webkit-border-image: url('../img/sidebar-line1.png') 0 0 1 0 repeat;
+         -o-border-image: url('../img/sidebar-line1.png') 0 0 1 0 repeat;
+            border-image: url('../img/sidebar-line1.png') 0 0 1 0 repeat;
+}
+#sidebar-main ul > li:last-child
+{
+    border-bottom: none;
+    -webkit-border-image: none;
+         -o-border-image: none;
+            border-image: none;
+}
+#sidebar-main #side-link
+{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    -webkit-border-image: url('../img/sidebar-line2.png') 4 0 4 0 repeat;
+         -o-border-image: url('../img/sidebar-line2.png') 2 0 2 0 repeat;
+            border-image: url('../img/sidebar-line2.png') 4 0 4 0 repeat;
+}
+
+/* ==================================== */
+/*                Fonts                 */
+/* ==================================== */
+body
+{
+    font-family: 'helvetica neue', Verdana,
+    'hiragino sans gb', stheiti,
+    'microsoft yahei',
+    'wenquanyi micro hei',
+    sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #333;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #7f130f;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+/* ======= Navbar ======= */
+#navbar ul li a{
+    color: #2e2e2e;
+    text-decoration: none;
+}
+/* ======= Breadcumb ======= */
+#breadcumb a
+{
+    font-size: 12px;
+
+    color: #666;
+}
+#breadcumb a:hover
+{
+    color: #7f130f;
+}
+
+/* ======= Article ======= */
+#article-title .publish-time
+{
+    font-size: .6em;
+
+    color: #bbb;
+}
+/* ======= Sidebar ======= */
+#sidebar-main #side-link ul > li a
+{
+    font-size: 1em/30px;
+    line-height: 30px;
+
+    color: #ffd598;
+}
+
+#sidebar-main #side-link ul > li a:hover
+{
+    text-decoration: none;
+
+    color: #d96a39;
+}
+/* ======= Category ======= */
+
+.category .category-title
+{
+    font-size: 1.07em;
+}
+.category > ul li
+{
+    font-size: 1em;
+    line-height: 24px;
+
+    border-bottom: 1px solid;
+    -webkit-border-image: url('../img/category-line1.png') 0 0 1 0 repeat;
+         -o-border-image: url('../img/category-line1.png') 0 0 1 0 repeat;
+            border-image: url('../img/category-line1.png') 0 0 1 0 repeat;
+}
+.category > ul li a
+{
+    color: #666;
+}
+.category > ul li a:hover
+{
+    color: #7f130f;
+}
+.category span.publish-time
+{
+    font-size: .6em;
+
+    color: #bbb;
+}
+/* ======= Page ======= */
+.page {
+    text-align: center;
+}
+span.page-indicator {
+    font-size: 12px;
+}
+span.page-indicator a{
+    color: #666;
+}
+span.page-indicator a:hover{
+    color: #7f130f;
+}
+/* ======= Footer ======= */
+#footer
+{
+    font: 12px/18px Verdana, sans-serif;
+
+    color: #999;
+}
