@@ -355,6 +355,9 @@ body {
 #article-content {
     padding: 0 20px;
 }
+#article-content img {
+    max-width: 100%;
+}
 
 /* ======= Slider ======= */
 #slider
@@ -500,6 +503,9 @@ a:hover
 }
 
 /* ======= Article ======= */
+#article-title h1 {
+    line-height: 1.2em;
+}
 #article-title .publish-time
 {
     font-size: .6em;
