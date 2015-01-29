@@ -28,6 +28,7 @@ body
 
     background: #eee;
 }
+
 ul
 {
     display: block;
@@ -87,7 +88,7 @@ ul
 {
     float: left;
 
-    width: 340px;
+    width: 175px;
     height: 100%;
 }
 #content
@@ -97,6 +98,14 @@ ul
     width: 700px;
     height: 100%;
     padding-bottom: 40px;
+}
+
+#sidebar-right
+{
+    float: left;
+
+    width: 175px;
+    height: 100%;
 }
 #sticktobottom
 {
@@ -118,7 +127,7 @@ ul
 #header #decor-left
 {
     position: absolute;
-    top: 200px;
+    top: 199px;
     left: -106px;
 
     width: 107px;
@@ -128,7 +137,7 @@ ul
 {
     position: absolute;
     top: 200px;
-    right: -105px;
+    right: -113px;
 
     width: 115px;
     height: 380px;
@@ -214,7 +223,7 @@ div#footer p
 
     display: block;
 
-    width: 340px;
+    width: 175px;
     height: 379px;
 }
 #sidebar-nav
@@ -231,6 +240,19 @@ div#footer p
     margin-left: 50px;
     padding: 3px 0;
 }
+
+/* ======= Sidebar-right ======= */
+
+#sidebar-right-main
+{
+    position: absolute;
+
+    display: block;
+
+    width: 175px;
+    height: 379px;
+}
+
 /* ==================================== */
 /*                Styles                */
 /* ==================================== */
@@ -284,7 +306,7 @@ body {
 }
 #decor-right
 {
-    background: url('../img/decor-right.png') no-repeat;
+    background: url('../img/home-decor-right.png') no-repeat;
 }
 #footer
 {
@@ -298,11 +320,24 @@ body {
 /* ======= Sidebar ======= */
 #sidebar
 {
-    background: url('../img/sidebar-bg.png');
+    background: url('../img/home-sidebar-bg.png');
 }
 #sidebar-main
 {
-    background: url('../img/sidebar-main.png');
+    background: url('../img/home-sidebar-main.png');
+}
+
+/* ======= Sidebar-right ======= */
+
+
+#sidebar-right
+{
+    background: url('../img/sidebar-right-bg.png');
+}
+
+#sidebar-right-main
+{
+    background: url('../img/sidebar-right-main.png');
 }
 
 
@@ -334,6 +369,11 @@ body {
 }
 /* ======= Article ======= */
 #article{}
+
+#article img {
+    max-width: 100%;
+}
+
 #article-title
 {
     margin-bottom: 20px;
@@ -354,9 +394,6 @@ body {
 }
 #article-content {
     padding: 0 20px;
-}
-#article-content img {
-    max-width: 100%;
 }
 
 /* ======= Slider ======= */
@@ -503,9 +540,6 @@ a:hover
 }
 
 /* ======= Article ======= */
-#article-title h1 {
-    line-height: 1.2em;
-}
 #article-title .publish-time
 {
     font-size: .6em;
