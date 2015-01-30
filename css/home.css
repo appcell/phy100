@@ -475,10 +475,7 @@ body {
 /* ======= Sidebar Nav ======= */
 #sidebar-main ul > li
 {
-    border-bottom: 1px solid;
-    -webkit-border-image: url('../img/sidebar-line1.png') 0 0 1 0 repeat;
-         -o-border-image: url('../img/sidebar-line1.png') 0 0 1 0 repeat;
-            border-image: url('../img/sidebar-line1.png') 0 0 1 0 repeat;
+    border-bottom: 1px dashed #ca5665;
 }
 #sidebar-main ul > li:last-child
 {
@@ -570,12 +567,9 @@ a:hover
 .category > ul li
 {
     font-size: 1em;
-    line-height: 24px;
+    line-height: 28px;
 
-    border-bottom: 1px solid;
-    -webkit-border-image: url('../img/category-line1.png') 0 0 1 0 repeat;
-         -o-border-image: url('../img/category-line1.png') 0 0 1 0 repeat;
-            border-image: url('../img/category-line1.png') 0 0 1 0 repeat;
+    border-bottom: 1px dashed #ddd;
 }
 .category > ul li a
 {
