@@ -80,8 +80,8 @@ ul
     width: 1050px;
     min-height: 100%;
     margin: 0 auto;
-    margin-top: 200px;
-    margin-bottom: -201px;
+    margin-top: 242px;
+    margin-bottom: -243px;
 }
 #sidebar
 {
@@ -118,7 +118,7 @@ ul
 #header #decor-left
 {
     position: absolute;
-    top: 200px;
+    top: 242px;
     left: -106px;
 
     width: 107px;
@@ -127,11 +127,19 @@ ul
 #header #decor-right
 {
     position: absolute;
-    top: 200px;
+    top: 242px;
     right: -105px;
 
     width: 115px;
     height: 380px;
+}
+#title
+{
+    position: absolute;
+    width: 100%;
+    background: no-repeat url('../img/title.png')  center;
+    height: 241px;
+    
 }
 
 /* ======= Navbar ======= */
